@@ -225,8 +225,8 @@ export default function Semester2() {
                   disabled={false}
                 />
                 <div className="text-blue-400 mb-2">⚛️</div>
-                <h3 className="font-semibold text-white text-sm mb-1">Physics</h3>
-                <p className="text-gray-400 text-xs">EPHY108L Materials</p>
+                <h3 className="font-semibold text-white text-sm mb-1">Mechanics</h3>
+                <p className="text-gray-400 text-xs">EPHY111L Materials</p>
               </a>
             </div>
 

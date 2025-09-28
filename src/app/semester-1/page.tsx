@@ -271,7 +271,7 @@ export default function Semester1() {
             {/* Life Skills Materials */}
             <div className="relative">
               <a
-                href="#"
+                href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EqUXtbVHDPpHipkt551zxNoBw24li-TJ9g0nJ_891tHRAg?e=Cl9jxQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
