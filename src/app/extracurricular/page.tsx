@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowLeft, Code, Globe, Palette, Zap, Database, Terminal } from 'lucide-react';
 import { ActivityExpandableCards } from '@/components/ActivityExpandableCards';
+import AnimatedFooter from '@/components/AnimatedFooter';
 
 export default function Extracurricular() {
   const activities = [
@@ -8,6 +9,18 @@ export default function Extracurricular() {
       name: "DSA Resources",
       icon: <Code className="w-6 h-6 text-purple-400" />,
       resources: [
+        { 
+          name: "Striver A2Z DSA Course", 
+          url: "https://youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&si=1hOQNEJR411RC9pJ" 
+        },
+        { 
+          name: "Complete C++ Placement DSA Course - CodeHelp by Babbar", 
+          url: "https://youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&si=QBN22CSHQfPiZOui" 
+        },
+        { 
+          name: "Java & DSA Course for Placement - Apna College", 
+          url: "https://youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop&si=sbP8lO8S7kUsSPPw" 
+        },
         { 
           name: "Striver's DSA Sheet - TakeUForward", 
           url: "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" 
@@ -19,18 +32,6 @@ export default function Extracurricular() {
         { 
           name: "Top 100 DSA Interview Questions - LeetCode", 
           url: "https://leetcode.com/discuss/post/4258631/top-100-dsa-interview-questions-by-anony-jlgg/" 
-        },
-        { 
-          name: "Striver's DSA Playlist 1", 
-          url: "https://youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&si=1hOQNEJR411RC9pJ" 
-        },
-        { 
-          name: "Striver's DSA Playlist 2", 
-          url: "https://youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&si=QBN22CSHQfPiZOui" 
-        },
-        { 
-          name: "Love Babbar DSA Playlist", 
-          url: "https://youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop&si=sbP8lO8S7kUsSPPw" 
         }
       ]
     },
@@ -39,11 +40,11 @@ export default function Extracurricular() {
       icon: <Globe className="w-6 h-6 text-blue-400" />,
       resources: [
         { 
-          name: "HTML Tutorial - Code with Harry", 
-          url: "https://youtu.be/BsDoLVMnmZs?si=EzDV5FXL4Z2-7Rqg" 
+          name: "Complete HTML Tutorial - CodeHelp by Babbar", 
+          url: "https://youtu.be/k7ELO356Npo?si=npv9CS6COL5vfqXR" 
         },
         { 
-          name: "HTML Complete Course - Code with Harry", 
+          name: "Sigma Web Development Course - Code with Harry", 
           url: "https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=9Ws75npjMZ80jJAX" 
         },
         { 
@@ -61,12 +62,12 @@ export default function Extracurricular() {
       icon: <Zap className="w-6 h-6 text-yellow-400" />,
       resources: [
         { 
-          name: "JavaScript Tutorial - Code with Harry", 
+          name: "Complete JavaScript Course - CodeHelp by Babbar", 
           url: "https://youtu.be/rfObCuGLSek?si=u1Lee4Dp7FjhlB-5" 
         },
         { 
-          name: "JavaScript Complete Course - Code with Harry", 
-          url: "https://youtube.com/playlist?list=PLu0W_9lII9aiQiOwthuSvinxoflmhRxM3&si=OM5vsVuUuvJ92BbM" 
+          name: "100+ Projects using HTML, JS and CSS - Huxn WebDev", 
+          url: "https://youtube.com/playlist?list=PLSDeUiTMfxW7lm7P7GZ8qtNFffHAR5d_w&si=dcWKm9ZFEwjgPAXt" 
         },
         { 
           name: "JavaScript Practice - CodeChef", 
@@ -83,15 +84,15 @@ export default function Extracurricular() {
       icon: <Palette className="w-6 h-6 text-pink-400" />,
       resources: [
         { 
-          name: "CSS Tutorial - Code with Harry", 
+          name: "Complete CSS Basic to Advanced - Coding Shuttle by Anuj Bhaiya", 
           url: "https://youtube.com/playlist?list=PLhzIaPMgkbxBk9-drEC0MBPqEOXpVlwY4&si=g31glLcXqnu7MWOH" 
         },
         { 
-          name: "CSS Complete Course - Code with Harry", 
+          name: "CSS Tutorial for Beginner - CodeHelp by Babbar", 
           url: "https://youtu.be/dSJM4Gyh8jE?si=2-XgsAnr03bn4ni6" 
         },
         { 
-          name: "CSS Advanced - Code with Harry", 
+          name: "HTML & CSS Projects - CodingLab", 
           url: "https://youtube.com/playlist?list=PLImJ3umGjxdD3ov2lwg0SM5rxz5v9FjOf&si=qY0-FAr-VG4C9pru" 
         },
         { 
@@ -113,15 +114,15 @@ export default function Extracurricular() {
           url: "https://youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt&si=_vJuCWh5gDuQH8hj" 
         },
         { 
-          name: "React Complete Course - Code with Harry", 
-          url: "https://youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&si=xCgOCsV7n2bhjF3S" 
+          name: "Chai aur React with Projects - Chai aur Code", 
+          url: "https://youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&si=LaiyofdUIX9Q5lmS" 
         },
         { 
-          name: "React Advanced - Code with Harry", 
+          name: "React by Love Babbar", 
           url: "https://www.youtube.com/playlist?list=PL9i39jUQljInNAIHUnnZhKrYhLbFt5I_6" 
         },
         { 
-          name: "React Hands-on Practice", 
+          name: "10 React Projects for Beginners - Do Some Coding", 
           url: "https://www.youtube.com/playlist?list=PLPppPPmk0i3j_DW1T-UbryDVhBDgaAfEp" 
         },
         { 
@@ -139,15 +140,15 @@ export default function Extracurricular() {
       icon: <Terminal className="w-6 h-6 text-green-400" />,
       resources: [
         { 
-          name: "Node.js Tutorial - Code with Harry", 
+          name: "Master Node.js - Piyush Garg", 
           url: "https://youtube.com/playlist?list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo&si=CFFwOs25dQXVn9Op" 
         },
         { 
-          name: "Node.js Complete Course - Code with Harry", 
+          name: "Complete Node.js + Express.js + MongoDB - Coding by Prashant Sir", 
           url: "https://youtube.com/playlist?list=PL78RhpUUKSwfeSOOwfE9x6l5jTjn5LbY3&si=RbLi2s_MBvQszYXf" 
         },
         { 
-          name: "Node.js Advanced - Code with Harry", 
+          name: "Master Backend Development Series - Shreyians Coding School", 
           url: "https://youtube.com/playlist?list=PLbtI3_MArDOkXRLxdMt1NOMtCS-84ibHH&si=6TevKcSzFtASbKT_" 
         },
         { 
@@ -169,20 +170,28 @@ export default function Extracurricular() {
       icon: <Code className="w-6 h-6 text-orange-400" />,
       resources: [
         { 
-          name: "Python Tutorial - Code with Harry", 
+          name: "Python for Beginners - Telusko", 
           url: "https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&si=NqbXFHDZ6bTZHE-d" 
         },
         { 
-          name: "Python Complete Course - Code with Harry", 
+          name: "Chai aur Python - Chai aur Code", 
           url: "https://youtube.com/playlist?list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&si=X7DUbxPftmWoKT40" 
         },
         { 
-          name: "Python for Beginners - Code with Harry", 
+          name: "Python for Beginner - Code with Harry", 
           url: "https://youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg&si=LNGXxp1kIeGosgyH" 
         },
         { 
-          name: "Python Hands-on Practice", 
+          name: "Harvard CS50 Introduction to Programming with Python", 
+          url: "https://youtu.be/nLRL_NcnK-4?si=PKP-TG3Qq1ipsqxp" 
+        },
+        { 
+          name: "100+ Python Programs and Solutions - WsCube Tech", 
           url: "https://youtube.com/playlist?list=PLjVLYmrlmjGf3jtxG8lSo-zaPktQ7YbUw&si=BgP8Jue5z4FCk-4H" 
+        },
+        { 
+          name: "Harvard CS50 Full Computer Science - FreeCodeCamp", 
+          url: "https://youtu.be/8mAITcNt710?si=dn79N4YUFONOWDzo" 
         },
         { 
           name: "Python Exercises - GeeksforGeeks", 
@@ -227,31 +236,9 @@ export default function Extracurricular() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-gray-800 py-8 px-4 mt-16">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400 mb-4">
-            Made with ❤️ by <span className="text-gray-300 font-semibold">Shantanu Kumar</span>
-          </p>
-          <div className="flex justify-center space-x-6">
-            <a 
-              href="https://www.linkedin.com/in/shantanu-kumar-s34/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-300 transition-colors duration-300"
-            >
-              LinkedIn
-            </a>
-            <a 
-              href="https://www.instagram.com/shantanukumar22?igsh=MWhlZHExOTUwYThmNA==" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-300 transition-colors duration-300"
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
-      </footer>
+      <div className="mt-16">
+        <AnimatedFooter />
+      </div>
     </div>
   );
 }

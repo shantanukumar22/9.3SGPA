@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { SubjectExpandableCards } from '@/components/SubjectExpandableCards';
+import AnimatedFooter from '@/components/AnimatedFooter';
 
 export default function Semester1() {
   const subjects = [
@@ -181,31 +182,9 @@ export default function Semester1() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-gray-800 py-8 px-4 mt-16">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400 mb-4">
-            Made with ❤️ by <span className="text-gray-300 font-semibold">Shantanu Kumar</span>
-          </p>
-          <div className="flex justify-center space-x-6">
-            <a 
-              href="https://www.linkedin.com/in/shantanu-kumar-s34/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-300 transition-colors duration-300"
-            >
-              LinkedIn
-            </a>
-            <a 
-              href="https://www.instagram.com/shantanukumar22?igsh=MWhlZHExOTUwYThmNA==" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-300 transition-colors duration-300"
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
-      </footer>
+      <div className="mt-16">
+        <AnimatedFooter />
+      </div>
     </div>
   );
 }
