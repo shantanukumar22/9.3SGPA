@@ -13,8 +13,8 @@ export default function Home() {
         <div className="absolute inset-0 w-full h-full">
           <Beams
             beamWidth={2}
-            beamHeight={15}
-            beamNumber={12}
+            beamHeight={25}
+            beamNumber={15}
             lightColor="#ffffff"
             speed={2}
             noiseIntensity={1.75}

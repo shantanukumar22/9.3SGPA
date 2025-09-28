@@ -95,15 +95,19 @@ export default function Semester1() {
       ]
     },
     {
-      name: "Engineering Mechanics",
-      code: "EMEC101",
+      name: "Mechanics & Electromagnetics",
+      code: "EPHY108L",
       resources: [
         { 
-          name: "Engineering Mechanics - Gajendra Purohit", 
-          url: "https://www.youtube.com/@gajendra_purohit_mechanical" 
+          name: "Infinity Physics - H S Sethi (Playlist 1)", 
+          url: "https://youtube.com/playlist?list=PLSWDszNFa1Q3Ep2Rxd4lJY_aaC63U2ZtF&si=VI_dpQvHjWhRUkv8" 
         },
         { 
-          name: "Engineering Mechanics Notes PDF", 
+          name: "Infinity Physics - H S Sethi (Playlist 2)", 
+          url: "https://youtube.com/playlist?list=PLSWDszNFa1Q2foWDnCpDw85LQNY8Nvo3i&si=MRlEKxBzV-zMfKHe" 
+        },
+        { 
+          name: "Electromagnetic Fields and Waves PDF", 
           url: "#" 
         }
       ]
@@ -114,7 +118,8 @@ export default function Semester1() {
       resources: [
         { 
           name: "Life Skills Notes", 
-          url: "#" 
+          url:"https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EqUXtbVHDPpHipkt551zxNoBw24li-TJ9g0nJ_891tHRAg?e=Cl9jxQ"
+
         }
       ]
     }
@@ -246,7 +251,7 @@ export default function Semester1() {
             {/* Mechanics Materials */}
             <div className="relative">
               <a
-                href="#"
+                href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EsHYCmQJy9RNk9ETmK1uW1YBEO-OxLNyfqRNlqeMfHmpYw?e=rHrGKR"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
