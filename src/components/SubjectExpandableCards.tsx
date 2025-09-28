@@ -53,11 +53,11 @@ export function SubjectExpandableCards({ subjects }: { subjects: Subject[] }) {
 
   return (
     <div className="max-w-4xl mx-auto w-full space-y-4 px-2 sm:px-0">
-      {subjects.map((subject, index) => (
+      {subjects.map((subject) => (
         <div key={`card-${subject.name}-${id}`} className="relative">
           <motion.div
             onClick={() => setActive(active === subject ? null : subject)}
-            className="relative p-3 sm:p-4 flex flex-col md:flex-row justify-between items-center rounded-xl cursor-pointer transition-colors duration-300 mb-3 sm:mb-4 bg-gray-900/50 hover:bg-gray-800/50 border border-gray-700"
+            className="relative p-3 sm:p-4 flex flex-col md:flex-row justify-between items-center rounded-xl cursor-pointer transition-colors duration-300 mb-3 sm:mb-4 min-h-[70px] sm:min-h-[80px] md:min-h-[90px] w-full"
           >
             <GlowingEffect
               blur={0}
@@ -82,7 +82,7 @@ export function SubjectExpandableCards({ subjects }: { subjects: Subject[] }) {
                   </p>
                 </div>
               </div>
-              <button className="px-3 py-1 text-xs sm:text-sm rounded-md font-medium bg-gray-700 hover:bg-gray-600 text-gray-200 mt-3 sm:mt-4 md:mt-0 transition-colors duration-300 whitespace-nowrap">
+              <button className="px-2 py-2 sm:px-3 sm:py-1 text-xs sm:text-sm rounded-md font-medium bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:border-white/30 text-white mt-3 sm:mt-4 md:mt-0 transition-all duration-300 whitespace-nowrap min-w-[80px] sm:min-w-auto flex-shrink-0 shadow-lg">
                 {active === subject ? 'Hide Resources' : 'View Resources'}
               </button>
             </div>
@@ -97,7 +97,7 @@ export function SubjectExpandableCards({ subjects }: { subjects: Subject[] }) {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="overflow-hidden"
               >
-                <div className="bg-gray-800/30 border border-gray-700 rounded-xl p-4 sm:p-6 mt-2">
+                <div className="bg-black sm:rounded-3xl overflow-hidden border border-gray-800 p-4 sm:p-6 mt-2">
                   <div className="mb-4">
                     <h3 className="font-bold text-white text-base sm:text-lg md:text-xl leading-tight mb-2">
                       {subject.name}

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { SubjectExpandableCards } from '@/components/SubjectExpandableCards';
 import AnimatedFooter from '@/components/AnimatedFooter';
+import { GlowingEffect } from '@/components/ui/glowing-effect';
 
 export default function Semester2() {
   const subjects = [
@@ -96,6 +97,38 @@ export default function Semester2() {
           url: "#" 
         }
       ]
+    },
+    {
+      name: "Introduction to Electrical and Electronics Engineering",
+      code: "CSET102",
+      resources: [
+        { 
+          name: "The Organic Chemistry Tutor", 
+          url: "https://www.youtube.com/@TheOrganicChemistryTutor" 
+        },
+        { 
+          name: "Neso Academy", 
+          url: "https://www.youtube.com/@nesoacademy" 
+        },
+        { 
+          name: "Engineers ki Pathsaala Playlist", 
+          url: "https://www.youtube.com/playlist?list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc" 
+        },
+        { 
+          name: "Reference Notes - Mohammad Usman Sir", 
+          url: "https://drive.google.com/drive/folders/1rHmP-LCBf1Bvc-CP3DtSxIL3MD08CGOr?usp=sharing" 
+        }
+      ]
+    },
+    {
+      name: "Environment Sustainability",
+      code: "ENV101",
+      resources: [
+        { 
+          name: "Reference Notes - Barun Kanoo Sir", 
+          url: "https://drive.google.com/drive/folders/1LrVL5Q1m7eYwSvlrKAlnYigB3XD7L0mN?usp=sharing" 
+        }
+      ]
     }
   ];
 
@@ -114,85 +147,213 @@ export default function Semester2() {
       </header>
 
       {/* Subject Materials Section */}
-      <section className="py-6 px-4 bg-gray-900/30">
+      <section className="py-6 px-4 bg-black">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-6">
             <h2 className="text-xl sm:text-2xl font-bold mb-2 text-gray-200">Subject Materials</h2>
             <p className="text-gray-400 text-sm sm:text-base">Access comprehensive study materials for each subject</p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4">
             {/* Java Materials */}
-            <a
-              href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/ErQyssUoJAhAjddHp7lUalEBIl7ZoRiR_rIXggX_Z_j5sw?e=sGYTDr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 rounded-lg p-4 text-center transition-colors duration-300 group"
-            >
-              <div className="text-orange-400 mb-2">☕</div>
-              <h3 className="font-semibold text-white text-sm mb-1">Java</h3>
-              <p className="text-gray-400 text-xs">CSET109 Materials</p>
-            </a>
+            <div className="relative">
+              <a
+                href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/ErQyssUoJAhAjddHp7lUalEBIl7ZoRiR_rIXggX_Z_j5sw?e=sGYTDr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
+              >
+                <GlowingEffect
+                  blur={0}
+                  inactiveZone={0.7}
+                  proximity={50}
+                  spread={20}
+                  variant="default"
+                  glow={false}
+                  movementDuration={2}
+                  borderWidth={1}
+                  disabled={false}
+                />
+                <div className="text-orange-400 mb-2">☕</div>
+                <h3 className="font-semibold text-white text-sm mb-1">Java</h3>
+                <p className="text-gray-400 text-xs">CSET109 Materials</p>
+              </a>
+            </div>
 
             {/* Linear Algebra Materials */}
-            <a
-              href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EkbQfTGo8nZHotMLsG_cFLsBddVdam5nhPExwTjAxH1ElQ?e=U8RrhF"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 rounded-lg p-4 text-center transition-colors duration-300 group"
-            >
-              <div className="text-purple-400 mb-2">📊</div>
-              <h3 className="font-semibold text-white text-sm mb-1">Linear Algebra</h3>
-              <p className="text-gray-400 text-xs">EMAT102 Materials</p>
-            </a>
+            <div className="relative">
+              <a
+                href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EkbQfTGo8nZHotMLsG_cFLsBddVdam5nhPExwTjAxH1ElQ?e=U8RrhF"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
+              >
+                <GlowingEffect
+                  blur={0}
+                  inactiveZone={0.7}
+                  proximity={50}
+                  spread={20}
+                  variant="default"
+                  glow={false}
+                  movementDuration={2}
+                  borderWidth={1}
+                  disabled={false}
+                />
+                <div className="text-purple-400 mb-2">📊</div>
+                <h3 className="font-semibold text-white text-sm mb-1">Linear Algebra</h3>
+                <p className="text-gray-400 text-xs">EMAT102 Materials</p>
+              </a>
+            </div>
 
             {/* Physics Materials */}
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 rounded-lg p-4 text-center transition-colors duration-300 group"
-            >
-              <div className="text-blue-400 mb-2">⚛️</div>
-              <h3 className="font-semibold text-white text-sm mb-1">Physics</h3>
-              <p className="text-gray-400 text-xs">EPHY108L Materials</p>
-            </a>
+            <div className="relative">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
+              >
+                <GlowingEffect
+                  blur={0}
+                  inactiveZone={0.7}
+                  proximity={50}
+                  spread={20}
+                  variant="default"
+                  glow={false}
+                  movementDuration={2}
+                  borderWidth={1}
+                  disabled={false}
+                />
+                <div className="text-blue-400 mb-2">⚛️</div>
+                <h3 className="font-semibold text-white text-sm mb-1">Physics</h3>
+                <p className="text-gray-400 text-xs">EPHY108L Materials</p>
+              </a>
+            </div>
 
             {/* DMS Materials */}
-            <a
-              href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EsCFyrKb4hhGv6yriXNEqbIB5nlAYtCFHl1jiv8BNRrX1g?e=tWWOxt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 rounded-lg p-4 text-center transition-colors duration-300 group"
-            >
-              <div className="text-cyan-400 mb-2">🔢</div>
-              <h3 className="font-semibold text-white text-sm mb-1">DMS</h3>
-              <p className="text-gray-400 text-xs">CSET106 Materials</p>
-            </a>
+            <div className="relative">
+              <a
+                href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EsCFyrKb4hhGv6yriXNEqbIB5nlAYtCFHl1jiv8BNRrX1g?e=tWWOxt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
+              >
+                <GlowingEffect
+                  blur={0}
+                  inactiveZone={0.7}
+                  proximity={50}
+                  spread={20}
+                  variant="default"
+                  glow={false}
+                  movementDuration={2}
+                  borderWidth={1}
+                  disabled={false}
+                />
+                <div className="text-cyan-400 mb-2">🔢</div>
+                <h3 className="font-semibold text-white text-sm mb-1">DMS</h3>
+                <p className="text-gray-400 text-xs">CSET106 Materials</p>
+              </a>
+            </div>
 
             {/* Digital Design Materials */}
-            <a
-              href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/ElLWHq8gq69MsYDeVulsltMBUguFhQyw7PnBOhAqA3E7SA?e=aM3utU"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 rounded-lg p-4 text-center transition-colors duration-300 group"
-            >
-              <div className="text-red-400 mb-2">🔌</div>
-              <h3 className="font-semibold text-white text-sm mb-1">Digital Design</h3>
-              <p className="text-gray-400 text-xs">CSET105 Materials</p>
-            </a>
+            <div className="relative">
+              <a
+                href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/ElLWHq8gq69MsYDeVulsltMBUguFhQyw7PnBOhAqA3E7SA?e=aM3utU"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
+              >
+                <GlowingEffect
+                  blur={0}
+                  inactiveZone={0.7}
+                  proximity={50}
+                  spread={20}
+                  variant="default"
+                  glow={false}
+                  movementDuration={2}
+                  borderWidth={1}
+                  disabled={false}
+                />
+                <div className="text-red-400 mb-2">🔌</div>
+                <h3 className="font-semibold text-white text-sm mb-1">Digital Design</h3>
+                <p className="text-gray-400 text-xs">CSET105 Materials</p>
+              </a>
+            </div>
 
             {/* Life Skills Materials */}
-            <a
-              href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EqUXtbVHDPpHipkt551zxNoBw24li-TJ9g0nJ_891tHRAg?e=Cl9jxQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 rounded-lg p-4 text-center transition-colors duration-300 group"
-            >
-              <div className="text-pink-400 mb-2">💡</div>
-              <h3 className="font-semibold text-white text-sm mb-1">Life Skills</h3>
-              <p className="text-gray-400 text-xs">LIFE101 Materials</p>
-            </a>
+            <div className="relative">
+              <a
+                href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EqUXtbVHDPpHipkt551zxNoBw24li-TJ9g0nJ_891tHRAg?e=Cl9jxQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
+              >
+                <GlowingEffect
+                  blur={0}
+                  inactiveZone={0.7}
+                  proximity={50}
+                  spread={20}
+                  variant="default"
+                  glow={false}
+                  movementDuration={2}
+                  borderWidth={1}
+                  disabled={false}
+                />
+                <div className="text-pink-400 mb-2">💡</div>
+                <h3 className="font-semibold text-white text-sm mb-1">Life Skills</h3>
+                <p className="text-gray-400 text-xs">LIFE101 Materials</p>
+              </a>
+            </div>
+
+            {/* Electrical Materials */}
+            <div className="relative">
+              <a
+                href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/EncCiaCQ5VNIh1gFpeyamvwBCUqnALAclsA1AdHLa62Zow?e=YuZe7h"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
+              >
+                <GlowingEffect
+                  blur={0}
+                  inactiveZone={0.7}
+                  proximity={50}
+                  spread={20}
+                  variant="default"
+                  glow={false}
+                  movementDuration={2}
+                  borderWidth={1}
+                  disabled={false}
+                />
+                <div className="text-yellow-400 mb-2">⚡</div>
+                <h3 className="font-semibold text-white text-sm mb-1">Electrical</h3>
+                <p className="text-gray-400 text-xs">CSET102 Materials</p>
+              </a>
+            </div>
+
+            {/* EVS Materials */}
+            <div className="relative">
+              <a
+                href="https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/Ep55xptIZJ9FmrW-O_II9csBGuwDEhMgf202fHr8UBG40g"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative p-4 text-center transition-colors duration-300 group rounded-lg min-h-[120px] flex flex-col justify-center items-center cursor-pointer"
+              >
+                <GlowingEffect
+                  blur={0}
+                  inactiveZone={0.7}
+                  proximity={50}
+                  spread={20}
+                  variant="default"
+                  glow={false}
+                  movementDuration={2}
+                  borderWidth={1}
+                  disabled={false}
+                />
+                <div className="text-green-500 mb-2">🌱</div>
+                <h3 className="font-semibold text-white text-sm mb-1">EVS</h3>
+                <p className="text-gray-400 text-xs">ENV101 Materials</p>
+              </a>
+            </div>
           </div>
         </div>
       </section>

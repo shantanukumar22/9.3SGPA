@@ -21,7 +21,7 @@ const getPlaylistThumbnail = async (playlistId: string): Promise<string | null> 
           return data.thumbnail_url;
         }
       }
-    } catch (error) {
+    } catch (_error) {
       console.log('oEmbed failed for playlist:', playlistId);
     }
 
@@ -49,7 +49,7 @@ const getPlaylistThumbnail = async (playlistId: string): Promise<string | null> 
           }
         }
       }
-    } catch (error) {
+    } catch (_error) {
       console.log('Playlist page parsing failed for:', playlistId);
     }
 
@@ -67,14 +67,14 @@ const getPlaylistThumbnail = async (playlistId: string): Promise<string | null> 
           thumbnailCache.set(playlistId, pattern);
           return pattern;
         }
-      } catch (error) {
+      } catch (_error) {
         // Continue to next pattern
       }
     }
     
     return null;
-  } catch (error) {
-    console.error('Error fetching playlist thumbnail:', error);
+  } catch (_error) {
+    console.error('Error fetching playlist thumbnail:', _error);
     return null;
   }
 };
@@ -111,7 +111,7 @@ const getChannelThumbnail = async (channelId: string): Promise<string | null> =>
           return thumbnailUrl;
         }
       }
-    } catch (error) {
+    } catch (_error) {
       console.log('Channel page parsing failed for:', channelId);
     }
 
@@ -127,7 +127,7 @@ const getChannelThumbnail = async (channelId: string): Promise<string | null> =>
           return data.thumbnail_url;
         }
       }
-    } catch (error) {
+    } catch (_error) {
       console.log('oEmbed failed for channel:', channelId);
     }
 
@@ -155,13 +155,13 @@ const getChannelThumbnail = async (channelId: string): Promise<string | null> =>
           }
         }
       }
-    } catch (error) {
+    } catch (_error) {
       console.log('Channel videos page parsing failed for:', channelId);
     }
     
     return null;
-  } catch (error) {
-    console.error('Error fetching channel thumbnail:', error);
+  } catch (_error) {
+    console.error('Error fetching channel thumbnail:', _error);
     return null;
   }
 };
@@ -219,8 +219,8 @@ export const getYouTubeThumbnail = (url: string): string | null => {
     // For channels, articles, and other non-video content, return null
     // This will prevent showing video thumbnails for non-video content
     return null;
-  } catch (error) {
-    console.error('Error extracting YouTube thumbnail:', error);
+  } catch (_error) {
+    console.error('Error extracting YouTube thumbnail:', _error);
     return null;
   }
 };
@@ -253,8 +253,8 @@ export const getYouTubeThumbnailAsync = async (url: string): Promise<string | nu
     }
     
     return null;
-  } catch (error) {
-    console.error('Error extracting YouTube thumbnail async:', error);
+  } catch (_error) {
+    console.error('Error extracting YouTube thumbnail async:', _error);
     return null;
   }
 };

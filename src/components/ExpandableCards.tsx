@@ -4,8 +4,6 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import { ExternalLink, Play, FileText, BookOpen } from "lucide-react";
-import { getYouTubeThumbnail, getFallbackThumbnail, getResourceType } from "@/lib/youtube-thumbnails";
 
 export function ExpandableCards() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
@@ -113,12 +111,12 @@ export function ExpandableCards() {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-2xl mx-auto w-full gap-4 px-2 sm:px-0">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => window.location.href = card.ctaLink}
-            className="relative p-3 sm:p-4 flex flex-col md:flex-row justify-between items-center rounded-xl cursor-pointer transition-colors duration-300 mb-3 sm:mb-4 min-h-[80px] sm:min-h-[90px] md:min-h-[100px] w-full"
+            className="relative p-3 sm:p-4 flex flex-col md:flex-row justify-between items-center rounded-xl cursor-pointer transition-colors duration-300 mb-3 sm:mb-4 min-h-[70px] sm:min-h-[80px] md:min-h-[90px] w-full"
           >
             <GlowingEffect
               blur={0}
@@ -148,7 +146,7 @@ export function ExpandableCards() {
               </div>
               <motion.button
                 layoutId={`button-${card.title}-${id}`}
-                className="px-3 py-1 text-xs sm:text-sm rounded-md font-medium bg-gray-700 hover:bg-gray-600 text-gray-200 mt-3 sm:mt-4 md:mt-0 transition-colors duration-300 whitespace-nowrap min-w-[120px] sm:min-w-[140px] flex-shrink-0"
+                className="px-2 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm rounded-md font-medium bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:border-white/30 text-white mt-3 sm:mt-4 md:mt-0 transition-all duration-300 whitespace-nowrap min-w-[80px] sm:min-w-[140px] flex-shrink-0 shadow-lg"
               >
                 {card.ctaText}
               </motion.button>

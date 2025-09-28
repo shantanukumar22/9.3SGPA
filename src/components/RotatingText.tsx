@@ -6,11 +6,15 @@ interface RotatingTextProps {
   texts: string[];
   mainClassName?: string;
   staggerFrom?: "first" | "last";
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   initial?: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   animate?: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   exit?: any;
   staggerDuration?: number;
   splitLevelClassName?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   transition?: any;
   rotationInterval?: number;
 }

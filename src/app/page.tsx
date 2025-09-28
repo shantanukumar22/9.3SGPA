@@ -1,6 +1,5 @@
 "use client"
-import Link from 'next/link';
-import { BookOpen, Users, Trophy } from 'lucide-react';
+import Image from 'next/image';
 import Beams from '../components/Beams';
 import TextPressure from '../components/TextPressure';
 import { ExpandableCards } from '../components/ExpandableCards';
@@ -23,6 +22,18 @@ export default function Home() {
             rotation={30}
           />
         </div>
+        {/* Logo Overlay */}
+        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 md:left-18 md:transform-none z-10">
+          <Image
+            src="/logo1.png"
+            alt="FullStack Club Logo"
+            width={180}
+            height={132}
+            className="object-contain"
+            priority
+          />
+        </div>
+
         <div className="absolute inset-0 flex items-center justify-center px-4">
           <div className="max-w-6xl mx-auto text-center z-10">
             <div className="mb-6 sm:mb-8">
