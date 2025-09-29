@@ -115,8 +115,8 @@ export function ExpandableCards() {
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
-            onClick={() => window.location.href = card.ctaLink}
-            className="relative p-3 sm:p-4 flex flex-col md:flex-row justify-between items-center rounded-xl cursor-pointer transition-colors duration-300 mb-3 sm:mb-4 min-h-[70px] sm:min-h-[80px] md:min-h-[90px] w-full"
+            onClick={() => window.open(card.ctaLink, "_blank")}
+            className="relative  p-3 sm:p-4 flex flex-col md:flex-row justify-between items-center rounded-xl cursor-pointer transition-colors duration-300 mb-3 sm:mb-4 min-h-[70px] sm:min-h-[80px] md:min-h-[90px] w-full"
           >
             <GlowingEffect
               blur={0}
@@ -248,6 +248,7 @@ const cards = [
     title: "PYQ",
     ctaText: "PYQ Materials",
     ctaLink: "https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/Ejeqs0tkIw9MohHeUriPeYgBOASAV_GovXb-37QxqV9KLQ?e=Zw3cjh",
+  
     content: () => {
       return (
         <p>

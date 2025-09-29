@@ -23,15 +23,41 @@ export default function Home() {
           />
         </div>
         {/* Logo Overlay */}
-        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 md:left-18 md:transform-none z-10">
-          <Image
-            src="/logo1.png"
-            alt="FullStack Club Logo"
-            width={180}
-            height={132}
-            className="object-contain"
-            priority
-          />
+        {/* Three images: left, center, right */}
+        <div className="absolute top-0 left-0 w-full h-26 md:h-32 lg:h-32 flex items-center justify-between z-10 pointer-events-none">
+          {/* Left */}
+          <div className="flex-1  flex ml-6 justify-start items-center h-full">
+            <Image
+              src="/cabinet.png"
+              alt="FullStack Club Logo Left"
+              width={180}
+              height={132}
+              className="object-contain hidden md:block"
+              priority
+            />
+          </div>
+          {/* Center */}
+          <div className="flex-1   flex justify-center items-center h-full">
+            <Image
+              src="/logo1.png"
+              alt="FullStack Club Logo Center"
+              width={300}
+              height={282}
+              className="object-contain"
+              priority
+            />
+          </div>
+          {/* Right */}
+          <div className="flex-1  mr-6 flex justify-end items-center h-full">
+            <Image
+              src="/bennett.png"
+              alt="FullStack Club Logo Right"
+              width={140}
+              height={132}
+              className="object-contain hidden md:block"
+              priority
+            />
+          </div>
         </div>
 
         <div className="absolute inset-0 flex items-center justify-center px-4">
