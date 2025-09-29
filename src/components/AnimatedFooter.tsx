@@ -10,7 +10,6 @@ export default function AnimatedFooter() {
     "Jaya Dash", 
     "Vinayak Pradhan",
     "Inesh Raj Panda",
-   
   ];
 
   return (
@@ -23,13 +22,13 @@ export default function AnimatedFooter() {
           <div className="inline-block w-32 text-left">
             <RotatingText
               texts={rotatingNames}
-              mainClassName="cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden"
+              mainClassName=" hover:scale-105 transition-all duration-300 overflow-hidden"
               staggerFrom="last"
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-120%" }}
               staggerDuration={0.025}
-              splitLevelClassName="text-gray-300 font-semibold underline decoration-gray-300 hover:decoration-blue-400 hover:text-blue-400 transition-colors duration-300 overflow-hidden"
+              splitLevelClassName="text-gray-300 font-semibold  decoration-gray-300 hover:decoration-blue-400 hover:text-blue-400 transition-colors duration-300 overflow-hidden"
               transition={{ type: "spring", damping: 30, stiffness: 400 }}
               rotationInterval={2000}
             />

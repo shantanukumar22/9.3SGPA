@@ -8,16 +8,13 @@ export default function Semester1() {
   const subjects = [
     {
       name: "Computational Thinking and Programming",
-      code: "CSET101",
+      code: "2025CSET100",
       resources: [
         { 
           name: "Python Tutorial for Beginners - Apna College (10hrs)", 
           url: "https://youtu.be/ERCMXc8x7mc?si=Tjg5BdTwmuqV89hQ" 
         },
-        { 
-          name: "Python for Beginners (100 Days of Coding) - Code with Harry", 
-          url: "https://youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg&si=KmLTkZE5ZbfmiaBb" 
-        },
+      
         { 
           name: "Python for Beginners - Chai aur Code (Part 1)", 
           url: "https://youtu.be/v9bOWjwdTlg?si=ymcQh_uoMdYYR_xG" 
@@ -32,17 +29,17 @@ export default function Semester1() {
         },
         { 
           name: "Python Crash Course by Eric Matthes (Book)", 
-          url: "#" 
+          url: "https://dokumen.pub/python-crash-course-a-hands-on-project-based-introduction-to-programming-2nd-edition-2nbsped-1593279280-9781593279288-9781593276034-1593276036-2015018135.html" 
         },
         { 
           name: "Think Python by Allen B. Downey (Book)", 
-          url: "#" 
+          url: "https://greenteapress.com/thinkpython2/thinkpython2.pdf" 
         }
       ]
     },
     {
       name: "Engineering Calculus",
-      code: "EMAT101",
+      code: "EMAT101L",
       resources: [
         { 
           name: "Gajendra Purohit YouTube Channel", 
@@ -50,12 +47,9 @@ export default function Semester1() {
         },
         { 
           name: "Thomas Calculus (Reference Book)", 
-          url: "#" 
+          url: "https://archive.org/details/thomascalculus0000unse" 
         },
-        { 
-          name: "Elementary Analysis: Theory of Calculus (Reference Book)", 
-          url: "#" 
-        },
+       
         { 
           name: "Reference Notes - Google Drive", 
           url: "https://drive.google.com/drive/folders/1Cjx7fv5ScLYzPXh2eDM-hzLBUXNUh-QR?usp=sharing" 
@@ -96,7 +90,7 @@ export default function Semester1() {
     },
     {
       name: "Mechanics & Electromagnetics",
-      code: "EPHY108L",
+      code: "EPHY117L",
       resources: [
         { 
           name: "Infinity Physics - H S Sethi (Playlist 1)", 
@@ -106,10 +100,7 @@ export default function Semester1() {
           name: "Infinity Physics - H S Sethi (Playlist 2)", 
           url: "https://youtube.com/playlist?list=PLSWDszNFa1Q2foWDnCpDw85LQNY8Nvo3i&si=MRlEKxBzV-zMfKHe" 
         },
-        { 
-          name: "Electromagnetic Fields and Waves PDF", 
-          url: "#" 
-        }
+        
       ]
     },
     {
@@ -169,7 +160,7 @@ export default function Semester1() {
                 />
                 <div className="text-blue-400 mb-2">🐍</div>
                 <h3 className="font-semibold text-white text-sm mb-1">Python</h3>
-                <p className="text-gray-400 text-xs">CSET101 Materials</p>
+                <p className="text-gray-400 text-xs">2025CSET100 Materials</p>
               </a>
             </div>
 
@@ -219,7 +210,7 @@ export default function Semester1() {
                 />
                 <div className="text-green-400 mb-2">📐</div>
                 <h3 className="font-semibold text-white text-sm mb-1">Calculus</h3>
-                <p className="text-gray-400 text-xs">EMAT101 Materials</p>
+                <p className="text-gray-400 text-xs">EMAT101L Materials</p>
               </a>
             </div>
 
@@ -269,7 +260,7 @@ export default function Semester1() {
                 />
                 <div className="text-blue-400 mb-2">⚙️</div>
                 <h3 className="font-semibold text-white text-sm mb-1">Mechanics</h3>
-                <p className="text-gray-400 text-xs">EMEC101 Materials</p>
+                <p className="text-gray-400 text-xs">EPHY117L Materials</p>
               </a>
             </div>
 
