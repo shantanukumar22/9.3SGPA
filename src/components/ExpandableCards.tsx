@@ -247,7 +247,7 @@ const cards = [
     description: "Previous Year Questions and exam preparation",
     title: "PYQ",
     ctaText: "PYQ Materials",
-    ctaLink: "https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/Ejeqs0tkIw9MohHeUriPeYgBOASAV_GovXb-37QxqV9KLQ?e=Zw3cjh",
+    ctaLink: "https://bennettu-my.sharepoint.com/:f:/g/personal/fullstack_bennett_edu_in/Ejeqs0tkIw9MohHeUriPeYgBOWwc6Ten8pfOfeVNnDFO1A?e=UKU7GT",
   
     content: () => {
       return (
